@@ -1,0 +1,9 @@
+package studyopedia;
+import java.util.Arrays;
+public class sortArray {
+	public static void main(String[] args) {
+		        String[] strings = {"apple", "banana", "pear", "orange", "grape"};
+		        Arrays.sort(strings);
+		        System.out.println("Sorted strings: " + Arrays.toString(strings));
+		    }
+}

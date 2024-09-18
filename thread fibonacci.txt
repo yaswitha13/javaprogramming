@@ -1,0 +1,32 @@
+package hero;
+
+public class threadfibseries {
+
+	public static void main(String[] args) {
+		int num=5;
+		Thread t1=new Thread(()->printFibonacci(num));
+		t1.start();
+		try {
+			t1.join();
+		}
+		catch(InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+		
+
+	}
+	public static void printFibonacci(int n)
+	{
+		int a=0,b=1,c;
+		for(int i=0;i<=n;i++)
+		{
+			System.out.println(a);
+			c=a+b;
+			a=b;
+			b=c;
+		}
+		
+	}
+
+}

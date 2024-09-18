@@ -1,0 +1,40 @@
+package practice;
+import java.util.Scanner;
+class saveetha {
+    public static void main(String[] args) {
+    Scanner input=new Scanner(System.in);
+    int r,c,k;
+    r=input.nextInt();
+    c=input.nextInt();
+    int a[][]=new int[r][c];
+    int b[][]=new int[r][c];
+    int d[][]=new int[r][c];
+    int i,j;
+    System.out.println("enter first matrix");
+    for(i=0;i<r;i++)
+    {
+    	for(j=0;j<c;j++)
+    	{
+    		a[i][j]=input.nextInt();
+    	}
+    }
+    System.out.println("enter second matrix");
+    for(i=0;i<r;i++)
+    {
+    	for(j=0;j<c;j++)
+    	{
+    		b[i][j]=input.nextInt();
+    	}
+    }
+    System.out.println("perform addition");
+    for(i=0;i<r;i++)
+    {
+    	for(j=0;j<c;j++)
+    	{
+    		d[i][j]+=a[i][j]+b[i][j];
+    		System.out.print(d[i][j]+" ");
+    	}
+    	System.out.println();
+    }
+    }
+}

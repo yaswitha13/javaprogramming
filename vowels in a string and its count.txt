@@ -1,0 +1,23 @@
+package saijava;
+import java.util.Scanner;
+public class practice
+{
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+String s=input.nextLine();
+int len=s.length();
+int count=0;
+char l[]=s.toCharArray();
+for(int i=0;i<len;i++)
+{
+	if(l[i]=='a'||l[i]=='e'||l[i]=='i'||l[i]=='o'||l[i]=='u'||l[i]=='A'||l[i]=='E'||l[i]=='I'||l[i]=='O'||l[i]=='U')
+	{
+		count++;
+		System.out.print(l[i]+" ");
+	}
+}
+System.out.println();
+System.out.println("count is:"+count);
+}
+}

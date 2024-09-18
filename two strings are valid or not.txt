@@ -1,0 +1,16 @@
+package practice;
+import java.util.Scanner;
+public class saveetha
+{
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+String s1,s2;
+s1=input.nextLine();
+s2=input.nextLine();
+if(s1.equals(s2))
+	System.out.println("valid");
+else
+	System.out.println("not valid");
+}
+}

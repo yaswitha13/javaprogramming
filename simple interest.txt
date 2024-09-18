@@ -1,0 +1,12 @@
+package studyopedia;
+
+public class si {
+
+	public static void main(String[] args) {
+		float p=15,t=3,r=9;
+		float simple;
+		simple=(p*t*r)/100;
+		System.out.println("s.i is:"+simple);
+	}
+
+}

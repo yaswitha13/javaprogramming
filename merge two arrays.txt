@@ -1,0 +1,22 @@
+package saijava;
+import java.util.Scanner;
+import java.util.Array;
+import java.util.Arrays;
+public class practice {
+	public static void main(String[] arg) {
+		Scanner input=new Scanner(System.in);
+		int arr1[]= {1,2,3};
+		int arr2[]= {4,5,6};
+		int n1=arr1.length;
+		int n2=3;
+		int n3=n1+n2;
+		int com[]=new int[n3];
+		for(int i=0;i<n1;i++)
+			com[i]=arr1[i];
+		for(int i=0;i<n2;i++)
+			com[n1+i]=arr2[i];
+		System.out.println("merged array is:");
+			System.out.println(Arrays.toString(com));
+	}
+
+}

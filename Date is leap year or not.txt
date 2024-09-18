@@ -1,0 +1,21 @@
+package saijava;
+import java.util.Scanner;
+public class practice
+{
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+String year=input.nextLine();
+String a[]=year.split("/");
+String d=a[2];
+int num=Integer.parseInt(d);
+if(num%4==0&&num%100!=0||num%400==0)
+{
+	System.out.println("Date is leap year");
+}
+else
+{
+	System.out.println("not a leap year");
+}
+}
+}

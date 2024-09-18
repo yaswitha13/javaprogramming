@@ -1,0 +1,21 @@
+package studyopedia;
+
+import java.util.Scanner;
+
+public class swap {
+
+	public static void main(String[] args) {
+		int a,b,temp;
+		Scanner d=new Scanner(System.in);
+		System.out.println("enter the numbers");
+		a=d.nextInt();
+		b=d.nextInt();
+		temp=a;
+		a=b;
+		b=temp;
+		System.out.println("after swapping a="+a);
+		System.out.println("after swapping b="+b);
+
+	}
+
+}

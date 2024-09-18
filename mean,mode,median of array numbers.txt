@@ -1,0 +1,47 @@
+package practice;
+import java.util.Scanner;
+
+public class saveetha {
+    public static void main(String[] args) {
+        int a[] = {16, 18, 27, 16, 23, 23, 23, 21, 19};
+        int len = a.length;
+        int sum = 0;
+        for (int i = 0; i < len; i++) {
+            sum += a[i];
+        }
+        double mean = (double)sum / len;
+        System.out.println("Mean: " + mean);
+        for (int i = 0; i < len; i++) {
+            for (int j = i + 1; j < len; j++) {
+                if (a[i] > a[j]) {
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        double median;
+        if (len % 2 == 0) {
+            int mid1 = len / 2;
+            int mid2 = mid1 - 1;
+            median = (a[mid1] + a[mid2]) / 2.0;
+        } else {
+            int mid = len / 2;
+            median = a[mid];
+        }
+        System.out.println("Median: " + median);
+
+        int maxValue = 0, maxCount = 0;
+        for (int i = 0; i < len; i++) {
+            int count = 0;
+            for (int j = 0; j < len; j++) {
+                if (a[i] == a[j]) count++;
+            }
+            if (count > maxCount) {
+                maxCount = count;
+                maxValue = a[i];
+            }
+        }
+            System.out.println("Mode: " + maxValue);
+    }
+}

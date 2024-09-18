@@ -1,0 +1,13 @@
+package studyopedia;
+
+public class dectobin {
+	public static void main(String[] args)
+	{
+		int d=15;
+		String binary=Integer.toBinaryString(d);
+		String octal=Integer.toOctalString(d);
+		System.out.println(binary);
+		System.out.println(octal);
+	}
+
+}

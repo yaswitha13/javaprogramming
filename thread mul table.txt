@@ -1,0 +1,29 @@
+package hero;
+
+public class threadmultable {
+	public static void main(String[] args) {
+    
+    int num1 = 5;
+    int num2 = 10;
+    Thread t1 = new Thread(() -> printTable(num1));
+    Thread t2 = new Thread(() -> printTable(num2));
+    
+    t1.start();
+    t2.start();
+
+    
+    try {
+        t1.join();
+        t2.join();
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+}
+
+public static void printTable(int number) {
+    System.out.println("Multiplication table for " + number + ":");
+    for (int i = 1; i <= 10; i++) {
+        System.out.println(number + " X " + i + " = " + (number * i));
+    }
+}
+}

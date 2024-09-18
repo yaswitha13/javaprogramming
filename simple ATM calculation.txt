@@ -1,0 +1,63 @@
+package practice;
+import java.util.Scanner;
+public class saveetha {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double balance = 1000.0;
+        boolean running = true;
+
+        while (running) {
+            System.out.println("Menu:");
+            System.out.println("1. Check Balance");
+            System.out.println("2. Deposit Money");
+            System.out.println("3. Withdraw Money");
+            System.out.println("4. Exit");
+            System.out.print("Choose an option (1-4): ");
+            
+            int choice = input.nextInt();
+            
+            switch (choice) {
+                case 1:
+                    System.out.println("Current Balance: $" + balance);
+                    break;
+                
+                case 2:
+                    System.out.print("Enter amount to deposit: $");
+                    double deposit = input.nextDouble();
+                    if (deposit > 0) {
+                        balance += deposit;
+                        System.out.println("Deposited: $" + deposit);
+                    } else {
+                        System.out.println("Invalid deposit amount.");
+                    }
+                    break;
+                
+                case 3:
+                    System.out.print("Enter amount to withdraw: $");
+                    double withdraw = input.nextDouble();
+                    if (withdraw > 0) {
+                        if (withdraw <= balance) {
+                            balance -= withdraw;
+                            System.out.println("Withdrew: $" + withdraw);
+                        } else {
+                            System.out.println("Insufficient funds. Unable to withdraw.");
+                        }
+                    } else {
+                        System.out.println("Invalid withdrawal amount.");
+                    }
+                    break;
+                
+                case 4:
+                    System.out.println("Exiting...");
+                    running = false;
+                    break;
+                
+                default:
+                    System.out.println("Invalid choice. Please enter a number between 1 and 4.");
+                    break;
+            }
+        }
+        
+        input.close();
+    }
+}

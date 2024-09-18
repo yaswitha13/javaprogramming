@@ -1,0 +1,21 @@
+package studyopedia;
+import java.util.Scanner;
+public class add {
+
+	public static void main(String[] args) {
+		int n;
+		Scanner a=new Scanner(System.in);
+		System.out.println("enter the number");
+		n=a.nextInt();
+		if(n % 2 == 0)
+		{
+			System.out.println("even");
+		}
+		else
+		{
+			System.out.println("odd");
+		}
+
+	}
+
+}

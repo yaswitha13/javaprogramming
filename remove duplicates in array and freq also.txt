@@ -1,0 +1,27 @@
+package saijava;
+import java.util.Scanner;
+
+public class pp {
+    public static void main(String[] arg) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+        	int count=1;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                	count++;
+                    for (int l = j; l < n - 1; l++) {
+                        arr[l] = arr[l + 1];
+                    }
+                    n--;
+                    j--;
+                }
+            }
+            System.out.println(arr[i]+":"+count);
+        }
+    }
+}

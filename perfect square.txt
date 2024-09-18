@@ -1,0 +1,16 @@
+package naga;
+
+public class sub {
+
+	public static void main(String[] args) {
+		int n=36,i;
+		for(i=1;i<=n;i++)
+		{
+			if(n == (i*i))
+			{
+				System.out.println("perfect square");
+			}
+		}
+	}
+
+}

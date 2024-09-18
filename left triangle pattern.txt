@@ -1,0 +1,22 @@
+package saijava;
+import java.util.Scanner;
+
+public class practice {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n=5;
+        int i,j,s;
+        for(i=0;i<n;i++)
+        {
+        	for(s=0;s<n-i;s++)
+        	{
+        		System.out.print(" ");
+        	}
+        	for(j=1;j<=i+1;j++)
+        	{
+        		System.out.print("*");
+        	}
+        	System.out.println();
+        }
+    }
+}

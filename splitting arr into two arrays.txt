@@ -1,0 +1,30 @@
+package saijava;
+
+import java.util.Scanner;
+import java.util.Arrays;
+public class java {
+	public static void main(String[] args)
+	{
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int arr[]=new int[n];
+		int arr1[]=new int[5];
+		int arr2[]=new int[n-5];
+		int i;
+		for(i=0;i<n;i++)
+		{
+			arr[i]=input.nextInt();
+		}
+		for(i=0;i<5;i++)
+		{
+			arr1[i]=arr[i];
+		}
+		for(i=5;i<n;i++)
+		{
+			arr2[i-5]=arr[i];
+		}
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.toString(arr2));
+		
+	}
+}

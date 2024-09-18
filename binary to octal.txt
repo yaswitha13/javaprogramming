@@ -1,0 +1,32 @@
+package saijava;
+import java.util.Scanner;
+import java.lang.Math;
+public class pp {
+	public static void main(String [] arg)
+	{
+		Scanner input=new Scanner(System.in);
+		int bin=input.nextInt();
+		int dec=0;
+		int i=0;
+		int t=bin;
+		while(t!=0)
+		{
+			int digit=t%10;
+			dec+=digit*Math.pow(2,i);
+			i++;
+			t/=10;
+		}
+		int j=1;
+		int oct=0;
+		int octc=dec;
+		while(octc!=0)
+		{
+			int rem=octc%8;
+			oct+=rem*j;
+			j*=10;
+			octc/=8;
+		}
+		System.out.println("octal number is:"+oct);
+	}
+
+}

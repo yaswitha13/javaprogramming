@@ -1,0 +1,21 @@
+package studyopedia;
+
+import java.util.Scanner;
+
+public class averageSum {
+
+	public static void main(String[] args) {
+		int a,b,c,sum,average;
+		Scanner d=new Scanner(System.in);
+		System.out.println("enter the numbers");
+		a=d.nextInt();
+		b=d.nextInt();
+		c=d.nextInt();
+		sum=a+b+c;
+		average=sum/3;
+		System.out.println("sum is:"+sum);
+		System.out.println("average is:"+average);
+
+	}
+
+}

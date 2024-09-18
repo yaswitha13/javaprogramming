@@ -1,0 +1,14 @@
+package studyopedia;
+
+public class eight {
+
+	public static void main(String[] args) {
+		String s="sandeep";
+        char c='p';
+        int x=s.indexOf(c);
+        System.out.println(x);
+        
+
+	}
+
+}

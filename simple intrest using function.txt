@@ -1,0 +1,28 @@
+package practice;
+import java.util.Scanner;
+public class saveetha
+{
+	public void intrest(float p,float t,String s)
+	{
+		float si;
+		if(s.equals("yes"))
+		{
+			si=(p*t*12)/100;
+		}
+		else
+		{
+			si=(p*t*10)/100;
+		}
+		System.out.println("simple intrest is:"+si);
+	}
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+float p=input.nextInt();
+float t=input.nextInt();
+input.nextLine();
+String ss=input.nextLine();
+saveetha obj=new saveetha();
+obj.intrest(p,t,ss);
+}
+}

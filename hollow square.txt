@@ -1,0 +1,26 @@
+package studyopedia;
+
+import java.util.Scanner;
+
+public class hollowSquare {
+
+	public static void main(String[] args) {
+		int size;
+		Scanner a=new Scanner(System.in);
+	    size=a.nextInt();;
+		for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                
+                if (i == 1 || i == size || j == 1 || j == size) {
+                    System.out.print("*");
+                } else {
+                    
+                    System.out.print(" ");
+                }
+            } 
+            System.out.println(" ");
+        }
+
+	}
+
+}

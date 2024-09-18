@@ -1,0 +1,24 @@
+package studyopedia;
+
+public class demo {
+
+	public static void main(String[] args) {
+		int a=6;
+		int b=5;
+		int c=7;
+		if(a>b && a>c)
+		{
+			System.out.println("greater is:"+a);
+		}
+		else if(b>a && b>c)
+		{
+			System.out.println(" greater is:"+b);
+		}
+		else
+		{
+			System.out.println(" greater is:"+c);
+		}
+
+	}
+
+}

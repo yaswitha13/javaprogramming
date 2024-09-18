@@ -1,0 +1,27 @@
+package studyopedia;
+import java.util.*;
+public class matrixMul {
+
+	public static void main(String[] args) {
+		int r,c;
+		int [][]a= {{1,2,3},{1,1,1},{1,2,3}};
+		int [][]b= {{1,1,1},{1,2,3},{1,1,1}};
+		int [][]m= new int[3][3];
+		Scanner d=new Scanner(System.in);
+		r=d.nextInt();
+		c=d.nextInt();
+		for(int i=0;i<r;i++)
+		{
+			for(int j=0;j<c;j++)
+			{
+				for(int k=0;k<r;k++)
+			    	m[i][j]+=a[i][k]*b[k][j];
+				System.out.print(m[i][j]);
+			}
+			System.out.println();
+		}
+		
+
+	}
+
+}

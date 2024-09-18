@@ -1,0 +1,27 @@
+package practice;
+import java.util.Arrays;
+public class saveetha
+{
+public static void main(String[] args)
+{
+int arr1[]= {1,2,3};
+int arr2[]= {4,9,5};
+int a=arr1.length;
+int b=arr2.length;
+int len=a+b;
+int arr3[]=new int[len];
+for(int i=0;i<a;i++)
+{
+	arr3[i]=arr1[i];
+}
+for(int i=0;i<b;i++)
+{
+	arr3[a+i]=arr2[i];
+}
+Arrays.sort(arr3);
+for(int i=0;i<len;i++)
+{
+	System.out.print(arr3[i]+" ");
+}
+}
+}

@@ -1,0 +1,21 @@
+package studyopedia;
+import java.util.Scanner;
+public class multiplicationTable {
+
+	public static void main(String[] args) {
+		int n,i;
+		Scanner a=new Scanner(System.in);
+		System.out.println("enter the number for multiplication table:");
+		n=a.nextInt();
+		for(i=1;i<=10;i++)
+		{
+			System.out.print(n);
+			System.out.print("x");
+			System.out.print(i);
+			System.out.print("=");
+			System.out.println(n*i);
+		}
+
+	}
+
+}

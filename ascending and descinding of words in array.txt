@@ -1,0 +1,42 @@
+package practice;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class saveetha {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String arr[] = { "Banana", "Apple", "Carrot", "Radish", "Jack" };
+
+        int len = arr.length;
+        System.out.println("Enter the order (A for Ascending, D for Descending): ");
+        char order = input.next().charAt(0);
+
+        if (order == 'A') {
+            for (int i = 0; i < len; i++) {
+                for (int j = i + 1; j < len; j++) {
+                    if (arr[i].compareTo(arr[j]) > 0) {
+                        String temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            System.out.println(Arrays.toString(arr));
+        } else if (order == 'D') {
+            for (int i = 0; i < len; i++) {
+                for (int j = i + 1; j < len; j++) {
+                    if (arr[i].compareTo(arr[j]) < 0) {
+                        String temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            System.out.println(Arrays.toString(arr));
+        } else {
+            System.out.println("Invalid input. Please enter 'A' for ascending or 'D' for descending.");
+        }
+
+        input.close();
+    }
+}

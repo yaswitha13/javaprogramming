@@ -1,0 +1,20 @@
+package studyopedia;
+
+public class fibo {
+
+	public static void main(String[] args) {
+		int n=7,first=0,second=1,nt;
+		System.out.println(first);
+		System.out.println(second);
+		while(n != 0)
+		{
+			nt=first+second;
+			System.out.println(nt);
+			first=second;
+			second=nt;
+			n--;
+		}
+
+	}
+
+}

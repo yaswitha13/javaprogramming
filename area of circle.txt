@@ -1,0 +1,18 @@
+package studyopedia;
+
+import java.util.Scanner;
+
+public class circleArea {
+
+	public static void main(String[] args) {
+		float r;
+		double area;
+		Scanner d=new Scanner(System.in);
+		System.out.println("enter the radius");
+		r=d.nextFloat();
+		area=(3.14)*(r*r);
+		System.out.println("area of circle="+area);
+
+	}
+
+}
